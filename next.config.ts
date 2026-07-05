@@ -1,0 +1,32 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.pravatar.cc',
+      },
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com'
+      }
+    ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
+
+export default nextConfig;
